@@ -1,5 +1,7 @@
 {
   "name": "photo_album",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "global": "^4.3.2",
+  }
 }

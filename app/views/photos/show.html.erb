@@ -1,6 +1,22 @@
-<%= @photo.title %>
-<%= @photo.date %>
-<%= image_tag @photo.file_location.url, size: "140x140", class: "img-thumbnail" %>
-<%= simple_format(@photo.description) %>
 
-<%= link_to 'Back to index', photos_path %>
+<div class="container">
+  <div class="row addBorder">
+    <div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 "> Title </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> <%= @photo.title %> </div>      
+    </div>
+    <div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> Date </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">  <%= @photo.date %> </div>
+    </div>
+    <div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> Photo </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">  <%= image_tag @photo.file_location.url, size: "200x200", class: "img-thumbnail" %> </div>
+    </div>
+    <div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> Description </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">  <%= simple_format(@photo.description) %> </div>
+    </div>
+    <div  class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> <%= link_to 'Back to index', photos_path %></div>
+  </div>
+</div>

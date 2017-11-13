@@ -1,3 +1,9 @@
 /* sprockets 要放置boostrap之前才會work*/
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+
+.addBorder {
+  margin-top: 10px;
+  border: 1px solid #000;
+}
+
